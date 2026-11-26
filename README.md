@@ -55,4 +55,4 @@ overthewire-bandit-writeups/
 
 ## 🔗 Resources
 
-* [OverTheWire: Bandit Official Page](https://overthewire.org)
+* [OverTheWire: Bandit Official Page](https://overthewire.org/wargames/bandit)
