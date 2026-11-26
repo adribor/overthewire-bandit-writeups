@@ -1,0 +1,12 @@
+--Level Goal
+There is a git repository at ssh://bandit28-git@bandit.labs.overthewire.org/home/bandit28-git/repo via the port 2220. The password for the user bandit28-git is the same as for the user bandit28.
+From your local machine (not the OverTheWire machine!), clone the repository and find the password for the next level. This needs git installed locally on your machine.
+
+--My Idea
+I cloned the repo in my local machine and read the README.md.
+I saw that there is some username and password but the password was xxxxxxxxx.
+I checked the git log to see if some information leaked and found a leak in previous commits.
+So i did a git diff with the leaked commit and saw the password.
+
+--Key
+[REDACTED]

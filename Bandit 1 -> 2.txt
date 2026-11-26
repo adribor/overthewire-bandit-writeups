@@ -1,0 +1,8 @@
+--Level Goal
+The password for the next level is stored in a file called - located in the home directory
+
+--My Idea
+To see the password we need to do a cat with a special characters, so it's "cat ./-" and got the password.
+
+--Key
+[REDACTED]

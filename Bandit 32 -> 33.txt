@@ -1,0 +1,10 @@
+--Level Goal
+After all this git stuff, it’s time for another escape. Good luck!
+
+--My Idea
+I was into an uppercase shell so I use the manual to search for sh.
+I found that if you write $0 it opens a new shell so I did it.
+It opened a normal shell where I did "cat /etc/bandit_pass/bandit33" and got the password.
+
+--Key
+[REDACTED]

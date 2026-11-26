@@ -1,0 +1,9 @@
+--Level Goal
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+--My Idea
+To see the only file readable I used "file ./*" to list and see all the format of the files.
+I found only an ASCII text file where it is the password.
+
+--Key
+[REDACTED]

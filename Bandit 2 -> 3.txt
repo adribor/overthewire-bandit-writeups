@@ -1,0 +1,8 @@
+--Level Goal
+The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+
+--My Idea
+To see the password I need to see in a file with special characters and spaces so the command is "cat ./--spaces\ in\ this\ filename--".
+
+--Key
+[REDACTED]

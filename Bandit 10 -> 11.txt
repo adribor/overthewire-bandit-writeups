@@ -1,0 +1,8 @@
+--Level Goal
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+--My Idea
+To encode and decode base64 data we need the command "base64" so I wrote: "base64 data.txt -d".
+
+--Key
+[REDACTED]

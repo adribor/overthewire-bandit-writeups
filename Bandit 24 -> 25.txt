@@ -1,0 +1,22 @@
+--Level Goal 
+A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by going through all of the 10000 combinations, called brute-forcing.
+You do not need to create new connections each time. 
+
+--My Idea
+In order to pass this level we firstly need to open the connection with the port 30002, to do this I used the command nc.
+
+I searched in the man and the correct command is "nc localhost 30002".
+
+Now I need to write all the number from 0000 to 9999, so I built a tiny bash inline script.
+
+This script is "for i in {0000..9999}; do echo "[REDACTED] $i"; done", what it does is:
+	-"for i in {0000..9999}": i is a variable that goes from 0000 to 9999 adding 1 each time;
+	-"do echo "[REDACTED] $i": writes the password of bandit24 and the variable i;
+
+Now I need to pipe the two and I get: 
+	for i in {0000..9999}; do echo "[REDACTED] $i"; done | nc localhost 30002
+
+After just a few seconds and many wrongs, I finally get the code.
+
+--Key
+[REDACTED]

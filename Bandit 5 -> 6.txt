@@ -1,0 +1,13 @@
+--Level Goal
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+    human-readable
+    1033 bytes in size
+    not executable
+
+
+--My Idea
+I used the command "find" to find the file using the command: "find . -size 1033c ! -executable -readable".
+
+--Key
+[REDACTED]

@@ -1,0 +1,17 @@
+--Level Goal 
+Good job getting a shell! Now hurry and grab the password for bandit27!
+
+--My Idea
+I was in vim from the previous bandit so opened a shell with "shell", found the executable "bandit27-do".
+I execute the file with "./bandit27-do cat /etc/bandit_pass/bandit27", and got the key.
+To exit the shell I wrote "exit", then for vim I used ":q!" to force close it.
+
+--Key
+[REDACTED]
+
+
+
+
+
+
+

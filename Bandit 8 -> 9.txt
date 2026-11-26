@@ -1,0 +1,9 @@
+--Level Goal
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+--My Idea
+To search for data that only occurs one I thought of "uniq", with the command "cat" and "sort" I used a pipeline.
+The command is: "cat data.txt|sort|uniq -u".
+
+--Key
+[REDACTED]

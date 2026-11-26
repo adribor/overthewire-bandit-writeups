@@ -1,0 +1,12 @@
+--Level Goal
+There is a git repository at ssh://bandit31-git@bandit.labs.overthewire.org/home/bandit31-git/repo via the port 2220. The password for the user bandit31-git is the same as for the user bandit31.
+From your local machine (not the OverTheWire machine!), clone the repository and find the password for the next level. This needs git installed locally on your machine.
+
+--My Idea
+I cloned the repo and read the README.md.
+I created a file named "key.txt" and inside I wrote "May I come in?".
+I did a "git add -f key.txt" and forced the add because there is a .gitignore with any .txt file and I did "git commit -m "MSG"" to commit the changes.
+Finally I did "git push" and it gave me the password for the next level.
+
+--Key
+[REDACTED]

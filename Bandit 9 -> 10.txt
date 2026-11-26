@@ -1,0 +1,9 @@
+--Level Goal
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+--My Idea
+To print only the readable strings we need the command "strings" and to search for "====" we need "grep".
+So the command is: "strings data.txt |grep ====".
+
+--Key
+[REDACTED]

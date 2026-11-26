@@ -1,0 +1,13 @@
+--Level Goal
+There is a git repository at ssh://bandit29-git@bandit.labs.overthewire.org/home/bandit29-git/repo via the port 2220. The password for the user bandit29-git is the same as for the user bandit29.
+From your local machine (not the OverTheWire machine!), clone the repository and find the password for the next level. This needs git installed locally on your machine.
+
+--My Idea
+I cloned the repo in my local machine and saw the README.md.
+In the README.md there is a username but as password there's "<no passwords in production!>".
+So I tried with git log with any luck, but then I tried to see all the branches.
+I wrote "git branch -a" to see all the branch, even the hidden ones and saw the "/dev".
+I switched to "/dev" branch with "switch remotes/origin/dev --detach" and with "git diff" I finally saw the password.
+
+--Key
+[REDACTED]

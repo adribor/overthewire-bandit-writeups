@@ -1,0 +1,25 @@
+--Level Goal
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
+
+--My Idea
+I looked in the cronjob and found:
+	#!/bin/bash
+
+	myname=$(whoami)
+	mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+	echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+	cat /etc/bandit_pass/$myname > /tmp/$mytarget
+So I did every step on my CLI:
+	myname=bandit23 
+	mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+	echo $mytarget
+	[REDACTED]
+	cat /tmp/[REDACTED]
+	[REDACTED]
+
+--Key
+[REDACTED]
