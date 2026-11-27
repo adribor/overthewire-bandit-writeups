@@ -1,8 +1,8 @@
 # 🛡️ OverTheWire: Bandit Wargame Writeups (Levels 0 – 33)
 
-![Wargame](https://shields.io)
-![Status](https://shields.io)
-![Focus](https://shields.io)
+![Wargame](https://img.shields.io/badge/OverTheWire-Bandit-red?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Linux_Security-blue?style=flat-square)
 
 Personal walkthroughs, command explanations, and notes for levels 0 through 33 of the **OverTheWire Bandit** wargame. This repository documents the methodology and Linux tools used to solve each challenge.
 
