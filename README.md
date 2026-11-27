@@ -1,31 +1,28 @@
-# 🛡️ OverTheWire: Bandit Wargame Writeups (Levels 0 – 33)
+# OverTheWire Bandit Writeups (Levels 0–33)
 
-![Wargame](https://img.shields.io/badge/OverTheWire-Bandit-red?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
-![Focus](https://img.shields.io/badge/Focus-Linux_Security-blue?style=flat-square)
+[![OverTheWire](https://img.shields.io/badge/OverTheWire-Bandit-red?style=flat-square)](https://overthewire.org/wargames/bandit/)
+[![Status](https://img.shields.io/badge/status-completed-brightgreen?style=flat-square)](#)
+[![Focus](https://img.shields.io/badge/focus-Linux_security-blue?style=flat-square)](#)
 
-Personal walkthroughs, command explanations, and notes for levels 0 through 33 of the **OverTheWire Bandit** wargame. This repository documents the methodology and Linux tools used to solve each challenge.
+Personal solutions and notes for the [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) wargame, covering levels 0 through 33.
 
-> **⚠️ Spoiler Policy:** In accordance with OverTheWire's guidelines, all actual level passwords and private SSH keys have been redacted (`[REDACTED]`). The goal of these writeups is to demonstrate the problem-solving process rather than provide shortcuts.
+Each level has a separate text file containing the commands, explanations, and methodology used to reach the next level. To avoid sharing challenge passwords and private SSH keys, sensitive values are replaced with `[REDACTED]`.
 
----
+> **Spoiler warning:** This repository contains solutions and hints for every level. Try solving each level yourself before reading the corresponding writeup.
 
-## 🎯 Skills & Concepts Covered
+## Skills and Concepts Covered
 
-Throughout the wargame, the following core Linux and cybersecurity concepts were practiced:
+- File navigation, hidden files, filenames with spaces or dashes, permissions, ownership, and redirection
+- Searching and filtering data with `find`, `grep`, `sort`, `uniq`, `awk`, and `sed`
+- Working with encoded data, Base64, hex dumps, compression, and archives
+- Connecting to network services with `nc`, `telnet`, `nmap`, and `openssl`
+- Using SSH keys and restricted SSH commands
+- Exploiting SUID binaries and understanding scheduled `cron` jobs
+- Automating tasks with Bash scripts
+- Escaping restricted shells and limited utilities
+- Inspecting Git commits, branches, tags, and hooks
 
-* **File System & Navigation:** Handling hidden files, dashed/spaced filenames, file permissions, ownership (`find`, `file`, `du`), and redirection (`2>/dev/null`).
-* **Text Processing & Data Manipulation:** Filtering, sorting, and extracting data using `grep`, `sort`, `uniq`, `strings`, `tr`, `awk`, and `sed`.
-* **Encoding & Compression:** Decoding Base64 and hexadecimal dumps (`xxd`), and handling multi-layered archives (`gzip`, `bzip2`, `tar`).
-* **Networking & Cryptography:** Interacting with local ports and network services (`nc`, `telnet`, `nmap`), establishing SSL/TLS connections (`openssl`), and SSH key authentication.
-* **Privilege Escalation & Automation:** Exploiting SUID binaries, analyzing scheduled `cron` jobs, writing Bash scripts, and escaping restricted shells (`vim`, `more`).
-* **Version Control (Git):** Inspecting commit history, branches, tags, and hooks in Git repositories.
-
----
-
-## 📁 Repository Structure
-
-Each level transition is documented in its own text file in the root directory:
+## Repository Structure
 
 ```text
 overthewire-bandit-writeups/
@@ -37,22 +34,24 @@ overthewire-bandit-writeups/
 └── Bandit 32 -> 33.txt
 ```
 
----
+Level files are named according to the starting and destination levels.
 
-## 🛠️ Key Commands Cheatsheet
+## Useful Commands
 
 | Command | Purpose |
-| :--- | :--- |
-| `find / -user X -size Y 2>/dev/null` | Search files by owner and size while hiding permission errors |
-| `strings file \| grep "==="` | Extract human-readable text from binary data |
-| `sort file \| uniq -u` | Find unique lines that appear only once |
-| `tr 'A-Za-z' 'N-ZA-Mn-za-m'` | Decode ROT13 cipher text |
-| `xxd -r hexfile > binfile` | Revert a hexdump back into a binary file |
-| `nmap -p 31000-32000 -sV localhost` | Scan a port range and detect running service protocols |
-| `openssl s_client -connect host:port` | Connect to a service over SSL/TLS |
+|---|---|
+| `find / -user user -size 33c 2>/dev/null` | Search files by owner and size while hiding permission errors |
+| `strings file  grep "=== "` | Extract readable text from binary data |
+| `sort file  uniq -u` | Find lines that appear only once |
+| `tr 'A-Za-z' 'N-ZA-Mn-za-m'` | Decode ROT13 text |
+| `xxd -r hexfile > binfile` | Convert a hex dump back to binary |
+| `nmap -p 31000-32000 -sV localhost` | Scan a port range and identify running services |
+| `openssl s_client -connect host:port` | Connect to an SSL/TLS service |
 
----
+## Disclaimer
 
-## 🔗 Resources
+These notes are provided for educational purposes. Follow the rules of the OverTheWire platform and use the techniques only in authorized environments.
 
-* [OverTheWire: Bandit Official Page](https://overthewire.org/wargames/bandit)
+## Resources
+
+- [OverTheWire: Bandit](https://overthewire.org/wargames/bandit/)
